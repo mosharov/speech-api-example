@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.sectionDescription {
+  font-size: 18px;
+  color: #000000;
+}
+
+.synthesisForm {
+  padding: 25px 0;
+}
+
+.synthesisFormInput {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 3px 10px 0 10px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.synthesisPlayButton {
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2672ec;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.synthesisPlayButton:focus {
+  outline: none;
+}
+
+.recognitionPlayButton {
+  display: block;
+  position: relative;
+  height: 40px;
+  margin: 25px 0;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2672ec;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.recognitionPlayButton:focus {
+  outline: none;
+}
+
+.recognitionPlayButton--active::after {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  right: -30px;
+  content: '';
+  background-color: #FF314F;
+  border-radius: 50%;
+  cursor: default;
+}
+
+.recognitionLanguage {
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 120px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.recognitionResult {
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+
+.transcript {
+  display: inline-block;
+  margin: 2px 0;
+  padding: 0 7px;
+  border-radius: 3px;
+}

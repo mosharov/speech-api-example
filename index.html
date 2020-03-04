@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web Speech Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+
+  <div class="section">
+
+    <div class="sectionDescription" id="synthesisDescription"></div>
+
+    <form id="synthesisForm" class="synthesisForm">
+
+      <input id="synthesisText" type="text" class="synthesisFormInput">
+      <select id="synthesisVoicesList" class="synthesisFormInput"></select>
+      <button id="synthesisPlayButton" class="synthesisPlayButton" type="submit">Play</button>
+
+    </form>
+
+  </div>
+
+  <div class="speech-recognition-section">
+    <div class="sectionDescription" id="recognitionDescription">Распознавание речи. Нажмите на иконку микрофона, и говорите</div>
+    <button id="recognitionPlayButton" class="recognitionPlayButton">Start</button>
+    <div id="recognitionLanguage" class="recognitionLanguage"></div>
+    <div id="recognitionResult" class="recognitionResult"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
