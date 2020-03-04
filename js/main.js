@@ -104,8 +104,6 @@ let recognitionStarted = false;
 let recognitionResult = '';
 let colors = {};
 
-console.log(recognition);
-
 //populate colors
 if (browserLanguage === 'ru-RU') {
 
