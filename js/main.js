@@ -18,11 +18,11 @@ const recognitionTextResult = document.querySelector('#recognitionResult');
 //text for descriptions
 if (browserLanguage === 'ru-RU') {
     synthesisDescription.textContent = 'Синтез речи. Введите текст, выберите "актера" и нажмите play';
-    recognitionDescription.textContent = 'Распознавание речи. Нажмите на иконку микрофона и скажите что-нибудь';
+    recognitionDescription.textContent = 'Распознавание речи. Нажмите на иконку микрофона и скажите что-нибудь, например: "Мой любимый цвет - синий"';
     recognitionLanguage.textContent = 'Язык распознавания: ' + browserLanguage;
 } else {
     synthesisDescription.textContent = 'Voice synthesis. Type some text, choose voice and press play button';
-    recognitionDescription.textContent = 'Speech recognition. Press the button and say something';
+    recognitionDescription.textContent = 'Speech recognition. Press the button and say something, for example: "My favorite color is blue"';
     recognitionLanguage.textContent = 'Recognition language: ' + browserLanguage;
 }
 
